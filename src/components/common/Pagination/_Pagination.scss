@@ -1,0 +1,43 @@
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+
+    .pagination-list {
+        background-color: #fff;
+
+        display: flex;
+        justify-content: center;
+
+        border-radius: 5px;
+
+        padding: 5px;
+
+        min-width: 100px;
+
+        .pagination-item {
+            padding: 5px 10px;
+
+            margin-right: 5px;
+            
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            transition: .2s all linear;
+
+            &:hover {
+                background-color: #f8f4f8;
+            }
+    
+            &.active {
+                background-color: #f8f4f8;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

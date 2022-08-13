@@ -1,0 +1,50 @@
+
+
+.toggler {
+    display: flex;
+    align-items: center;
+
+    .toggler-block {
+        border: 1px solid #4f4f4f;
+        border-radius: 34px;
+
+        width: 60px;
+        height: 30px;
+
+        margin-right: 10px;
+
+        cursor: pointer;
+
+        transition: .2s all ease-in;
+
+        &.active {
+            background-color: red;
+        }
+
+        .toggler-dot {
+            border: .5px solid #4f4f4f;
+            border-radius: 34px;
+
+            height: 100%;
+            width: 30px;
+
+            transition: .2s all ease-in;
+
+            &.toggled {
+                transform: translateX(30px);
+
+                background-color: #fff;
+            }
+        }
+    }
+    
+    .toggler-label {
+        color: #a7a7a7;
+        font-size: 16px;
+        padding-left: 10px;
+
+        &.active {
+            color: #222;
+        }
+    }
+}

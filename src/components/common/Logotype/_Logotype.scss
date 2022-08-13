@@ -1,0 +1,20 @@
+
+
+.logo {
+
+    .logo-lgScreen {
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    .logo-smScreen {
+        display: none;
+
+        @media screen and (max-width: 700px) {
+            display: block;
+        }
+    }
+}
+

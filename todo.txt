@@ -1,0 +1,13 @@
+
+
+
+TODO
+
+SDELAT SKELETON DLYA SIDES
+SIDE FILTERING
+PRODUCT PAGE
+CART PAGE+++++++++
+
+
+localstorage save
+pagination or infinit scroll++++(сделать баг с обнуление страниці на 1)

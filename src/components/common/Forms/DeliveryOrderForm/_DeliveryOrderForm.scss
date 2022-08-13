@@ -1,0 +1,49 @@
+
+
+.deliveryOrder {
+    
+    .deliveryOrder-total {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        color: #333;
+
+        .deliveryOrder-totalTitle {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .deliveryOrder-totalPrice {
+            margin-bottom: 30px;
+
+            .number {
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+            .text {
+                padding-left: 5px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        .deliveryOrder-totalConfirm {
+            border-radius: 15px;
+            border: none;
+
+            background: #e31837;
+
+            color: #fff;
+            font-family: Open Sans,sans-serif;
+            font-size: 18px;
+
+            height: 50px;
+            width: 214px;
+
+            cursor: pointer;
+        }
+    }
+}

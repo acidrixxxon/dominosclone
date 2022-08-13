@@ -1,0 +1,25 @@
+
+
+#header {
+    background-color: #222222;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 900px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-bottom: 40px;
+    }
+}

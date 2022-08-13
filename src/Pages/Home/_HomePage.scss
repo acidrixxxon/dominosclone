@@ -1,0 +1,21 @@
+
+
+#home {
+
+    .home_top-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 850px) {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
+    
+
+    .home_main-content {
+        
+    }
+}

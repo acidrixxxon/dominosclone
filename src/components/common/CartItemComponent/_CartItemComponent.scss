@@ -1,0 +1,119 @@
+
+.cartItem {
+    display: flex;
+
+    padding: 10px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    @media screen and (max-width: 500px) {
+        padding: 10px 0 20px;
+    }
+    .cartItem-image {
+
+        .cartItem-img {
+            object-fit: contain;
+            border-radius: 15px;
+            height: 120px;
+            width: 193px;
+
+            @media screen and (max-width: 500px) {
+                width: 150px;
+                height: auto;
+            }
+        }
+    }
+
+    .cartItem-description {
+        width: 100%;
+
+        margin-left: 10px;
+
+        padding: 0 0 12px 0;
+
+        @media screen and (max-width: 500px) {
+            padding: 0;
+        }
+
+        .cartItem-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .cartItem-title {
+                font-size: 14px;
+                color: #222;
+                letter-spacing: .05em;
+
+                padding-bottom: 12px;
+            }
+
+            svg {
+                width: 30px;
+                height: 30px;
+
+                cursor: pointer;
+            }
+        }
+
+        .cartItem-body {
+            min-height:40px;
+            font-size: 11px;
+            color: #4f4f4f;
+            line-height: 146%;
+        }
+
+        .cartItem-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .cartItem-priceBlock {
+
+                .cartItem-price {
+                    font-size: 18px;
+                    letter-spacing: .03em;
+                    font-weight: 700;
+
+                    margin-right: 5px;
+                }
+
+                .cartItem-currency {
+                    font-weight: 700;
+                    font-size: 11px;
+                }
+            }
+
+            .cartItem-qtyBlock {
+                color: #fff;
+                background: #e31837;
+                
+                border-radius: 15px;
+
+                width: 90px;
+                height: 30px;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 0 10px;
+
+                font-family: Open Sans,sans-serif;
+                font-size: 15px;
+
+                .minus,.plus {
+                    font-weight: 700;
+                    letter-spacing: 1e-7rem;
+                    
+                    cursor: pointer;
+
+                    svg {
+                        width: 10px;
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
