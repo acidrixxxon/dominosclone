@@ -7,8 +7,22 @@ import Search from '../Search/Search'
 import './_Header.scss'
 
 const Header = () => {
+  const headerEl = React.useRef(null)
+
+  const isSticky = () => {
+    const scrollTop = window.scrollY;
+
+    scrollTop >= 70 ? headerEl.current.classList.add('is-sticky') : headerEl.classList.remove('is-sticky');
+  }
+
+  React.useEffect(() => {
+    window.addEventListener('scroll',isSticky)
+
+    return () => window.removeEventListener('scroll',isSticky)
+  },[])
+
   return (
-    <header id='header'>
+    <header id='header' ref={headerEl}>
         <Container>
             <Logotype />
             <Search />
